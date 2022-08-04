@@ -2,12 +2,19 @@
 {
     private static void Main(string[] args)
     {
-        int userNumber = new int();
-        Console.WriteLine("Введите число: ");
-        userNumber = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введите число 1: ");
+        int userNumber1 = Convert.ToInt32(Console.ReadLine());
 
-        int result = (userNumber * userNumber);
+        Console.WriteLine("Возможный квадрат: ");
+        int userNumber2 = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Степень числа " + userNumber + " = " + result);
+        if (userNumber2 == userNumber1 * userNumber1)
+        {
+            Console.WriteLine("true");
+        }
+        else
+        {
+            Console.WriteLine("false");
+        }
     }
 }
